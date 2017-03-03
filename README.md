@@ -19,5 +19,5 @@ Web application to interface with GIS maps with the intent to get specific data 
  * geodatabase that contains:
     * the polygon feature class 
     * conservation data table that contains attributes for each polygon feature.
-    * relationship class that does a one to many maping between each polygon feature and the attributes withing the conservation data table.
+    * relationship class that does a one to many maping between each polygon feature and the attributes within the conservation data table.
  * tile package file - This file contains multiple raster images of the polygon feature class at different zoom levels. 
