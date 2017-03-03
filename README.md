@@ -15,7 +15,7 @@ Web application to interface with GIS maps with the intent to get specific data 
  * Access www.arcgis.com (ArcGIS online) portal rest services. You can use your own portal site but I chose to use ArcGIS online.
  
  
- ### Resources that were used but are not hosted on this repository.
+### Resources that were used but are not hosted on this repository.
  * geodatabase that contains:
     * the polygon feature class 
     * conservation data table that contains attributes for each polygon feature.
