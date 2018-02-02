@@ -10,14 +10,18 @@ Web application to interface with GIS maps with the intent to get specific data 
  
 
 ### Requirements for the backend of the web application.
- * The web app can be hosted on any IIS 8.5 server.
- * ArcGIS for Server 1.4.1 is required to host the feature layers to which the app requires access.
+ * The web app can be hosted on most any web server.
+ * ArcGIS for Server 1.4.1 (or higher) is required to host the feature layers to which the app requires access.
  * Access www.arcgis.com (ArcGIS online) portal rest services. You can use your own portal site but I chose to use ArcGIS online.
  
  
 ### Resources that were used but are not hosted on this repository.
- * geodatabase that contains:
+ * 2 geodatabase that contains:
     * the polygon feature class 
     * conservation data table that contains attributes for each polygon feature.
     * relationship class that does a one to many maping between each polygon feature and the attributes within the conservation data table.
- * tile package file - This file contains multiple raster images of the polygon feature class at different zoom levels. 
+    * 3 layer files that create the symbology for each map
+    
+    
+    
+ 
