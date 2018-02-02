@@ -1,0 +1,79 @@
+	<div class="topArea" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'top'" >
+		<div class="header">NatureScape</div><br>
+		<div class="buttons">
+			<label class="btn" id="selectFeaturesButton-1" toggle="false">Select Multiple Features</label>
+			<label class="btn" id="selectFeatureButton-1" toggle="false">Select Individual Features</label>
+			<form class="form" enctype="multipart/form-data" method="post" id="uploadForm-1">
+				<label class="btn" id="formLabelId-1"> Load Shape File (zipped)
+					<input type="file" name="file" id="inFile-1" />
+				</label>
+			</form>
+			<label class="btn" id="clearSelectionButton-1">Clear Selection</label>
+		</div>
+		<p class="status-message" id="statusMessage-1"/>
+		<div class="totalFeaturesSelected" id="totalFeaturesSelected-1">Total Features Selected: 0</div>
+	</div>
+	
+	<div id="mapDiv-1" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'" style="margin:4px;">
+		<div id="homebutton-1"></div>
+		<div id="opacityslider-1">
+			<span class="esriSliderToolTipText">Transparency Slider</span>
+		</div>
+		<div id="dMBox-1">
+			<div class="descriptionModelBox">
+				<div class="descriptionModelBoxContent">
+					<span class="descriptionModelBoxClose">&times;</span>
+					<p class="speciesDescription"></p>
+				</div>
+			</div>
+		</div>
+	
+		
+		<!-- Legend for this map -->
+		<div class="legendDiv">
+			<table class="formTable">
+				<tbody> 
+					<tr>
+						<td>
+							<b>Integrated Modeling</b>
+			<table>
+				<tbody>
+					<tr valign="middle">
+						<td><b/></td>
+					</tr>
+					<tr valign="middle">
+						<td><b/></td>
+					</tr>					
+					<tr valign="middle">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAADFJREFUOI1jYaAyYKGZgSUP/v+nxKAeBUZGFAOpBUYNHDVw1MBRA+lsIKw8o5qB1AIA684E/8W4bzkAAAAASUVORK5CYII=" alt="Important Aquatic Areas"></td>
+						<td>Important Aquatic Areas</td>
+					</tr>
+					<tr valign="middle">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAADFJREFUOI1jYaAyYKGZgdcPzf9PiUGadomMKAZSC4waOGrgqIGjBtLZQFh5RjUDqQUA9FMFGrlctCAAAAAASUVORK5CYII=" alt="Not In Optimal Solution"></td>
+						<td>Not In Optimal Solution</td>
+					</tr>
+					<tr valign="middle">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAADFJREFUOI1jYaAyYKGZgSolDP8pMehODwMjioHUAqMGjho4auCogXQ2EFaeUc1AagEAhRwEum7i9DoAAAAASUVORK5CYII=" alt="Protected"></td>
+						<td>Protected</td>
+					</tr>
+					<tr valign="middle">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAADFJREFUOI1jYaAyYKGZgfkrGP5TYtDECAZGFAOpBUYNHDVw1MBRA+lsIKw8o5qB1AIAWSkEO1AAdroAAAAASUVORK5CYII=" alt="In Optimal Solution"></td>
+						<td>In Optimal Solution</td>
+					</tr>
+					<tr valign="middle">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAADFJREFUOI1jYaAyYKGZgf8Zjv6nxCBGBmtGFAOpBUYNHDVw1MBRA+lsIKw8o5qB1AIAG+YDjpjU8RsAAAAASUVORK5CYII=" alt="Developed"></td>
+						<td>Developed</td>
+					</tr>
+				</tbody>
+			</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>						
+		</div>
+		
+	</div>
+	
+	<div id="speciesGrid-1" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'bottom', splitter: true">
+		<span class="tooltip">Click on a row to see a description.</span>
+	</div>

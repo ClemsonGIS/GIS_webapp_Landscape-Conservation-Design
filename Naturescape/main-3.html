@@ -1,0 +1,70 @@
+	<div class="topArea" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'top'" >
+		<div class="header">NatureScape</div><br>
+		<div class="buttons">
+			<label class="btn" id="selectFeaturesButton-3" toggle="false">Select Multiple Features</label>
+			<label class="btn" id="selectFeatureButton-3" toggle="false">Select Individual Features</label>
+			<form class="form" enctype="multipart/form-data" method="post" id="uploadForm-3">
+				<label class="btn" id="formLabelId-3"> Load Shape File (zipped)
+					<input type="file" name="file" id="inFile-3" />
+				</label>
+			</form>
+			<label class="btn" id="clearSelectionButton-3">Clear Selection</label>
+		</div>
+		<p class="status-message" id="statusMessage-3"/>
+		<div class="totalFeaturesSelected" id="totalFeaturesSelected-3">Total Features Selected: 0</div>
+	</div>
+	
+	<div id="mapDiv-3" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'" style="margin:4px;">
+		<div id="homebutton-3"></div>
+		<div id="opacityslider-3">
+			<span class="esriSliderToolTipText">Transparency Slider</span>
+		</div>
+		
+		<!-- Legend for this map -->
+		<div class="legendDiv">
+			<table class="formTable">
+				<tbody>
+					<tr>
+						<td>
+							<b>Aquatic Catchment Score</b>
+			<table>
+				<tbody>
+					<tr valign="middle">
+						<td><b/></td>
+					</tr>
+					<tr valign="middle">
+						<td><b/></td>
+					</tr>						
+					<tr class="legendRow" valign="left">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUOI1jYaAyYKGZgTk5Of8pNWzKlCmMKC7M2r+DbMOmOXowMDDQ0sujBo4aOGrgqIE4DYQVQeSAKVOmMKIYCBOgFAAAqpUL6js9lk4AAAAASUVORK5CYII=" alt="-7.419036 - -0.442937"></td>								
+						<td>Low</td>
+					</tr>
+					<tr class="legendRow" valign="middle">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEVJREFUOI1jYaAyYKGZgTk5Of8pNWzKlCmMKC7s1PlLtmHlV5gZGBho6eVRA0cNHDVw1ECcBsKKIHLAlClTGFEMhAlQCgC64wwZrBPAEQAAAABJRU5ErkJggg==" alt="-0.442936 - -0.144995"></td>
+						<td>Medium-low</td>
+					</tr>
+					<tr class="legendRow" valign="middle">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUOI1jYaAyYKGZgTk5Of8pNWzKlCmMKC6cPDmYbMNyc9cyMDDQ0sujBo4aOGrgqIE4DYQVQeSAKVOmMKIYCBOgFAAAzccMUlyfN8MAAAAASUVORK5CYII=" alt="-0.144994 - 0.095795"></td>
+						<td>Medium</td>
+					</tr>
+					<tr valign="middle">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUOI1jYaAyYKGZgTk5Of8pNWzKlCmMKC409wwk27CT29czMDDQ0sujBo4aOGrgqIE4DYQVQeSAKVOmMKIYCBOgFAAAB/AM+m7eT0IAAAAASUVORK5CYII=" alt="0.095796 - 0.363898"></td>
+						<td>Medium-high</td>
+					</tr>
+					<tr valign="middle">
+						<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAEZJREFUOI1jYaAyYKGZgTk5Of8pNWzKlCmMKC68yeVJtmHq37YzMDDQ0sujBo4aOGrgqIE4DYQVQeSAKVOmMKIYCBOgFAAA5+8Mn+qIEFYAAAAASUVORK5CYII=" alt="0.363899 - 5.753028"></td>
+						<td>High</td>
+					</tr>
+				</tbody>
+			</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+	
+	<div id="speciesGrid-3" data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'bottom', splitter: true">
+		<span class="tooltip">Click on a row to highlight corresponding feature.</span>
+	</div>

@@ -1,0 +1,332 @@
+	html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+	}
+
+	body {
+		background-color:#777;
+        overflow:hidden;
+        font-family: "Trebuchet MS";
+	}
+
+	.topArea {
+		background-color:#444;
+		text-align:center;
+		max-height: 25%;
+	}
+	  
+    .header {
+        background-color:#444;
+        color:orange;
+        font-size:20pt;
+        text-align:center;
+        font-weight:bold;
+
+    }
+	  
+
+	#center {
+		auto-width: 100%;
+		auto-height: 100%;
+	}
+	
+	#right {
+		width: 100px;
+		height: 100%;
+	}
+
+	#footer {
+        background-color:#444;
+        color:orange;
+        font-size:10pt;
+        text-align:center;
+	}
+
+	.tundra .dijitContentPane {
+        font-family: "Lucida Grande","Segoe UI","Arial",sans-serif;
+        font-weight: normal;
+        font-size: small;
+	}
+	
+	#uploadForm-1, #uploadForm-2, #uploadForm-3 {
+		padding: 0px 5px 0px 0px;
+		display: inline;
+	}
+	
+	#inFile-1, #inFile-2, #inFile-3 {
+		display: none;
+	}
+	
+	.btn {
+		background: #3498db;
+		background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+		background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+		background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+		background-image: -o-linear-gradient(top, #3498db, #2980b9);
+		background-image: linear-gradient(to bottom, #3498db, #2980b9);
+		-webkit-border-radius: 8;
+		-moz-border-radius: 8;
+		border-radius: 8px;
+		font-family: Arial;
+		color: #ffffff;
+		font-size: 12px;
+		padding: 5px 20px 5px 20px;
+		text-decoration: none;
+	}	
+
+	.btn:hover {
+		background: #3cb0fd;
+		background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+		background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+		background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+		background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+		background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+		text-decoration: none;
+	}
+	
+	.btn-active {
+		background: #83dbb4;
+		background-image: -webkit-linear-gradient(top, #83dbb4, #47ad7f);
+		background-image: -moz-linear-gradient(top, #83dbb4, #47ad7f);
+		background-image: -ms-linear-gradient(top, #83dbb4, #47ad7f);
+		background-image: -o-linear-gradient(top, #83dbb4, #47ad7f);
+		background-image: linear-gradient(to bottom, #83dbb4, #47ad7f);
+		-webkit-border-radius: 8;
+		-moz-border-radius: 8;
+		border-radius: 8px;
+		font-family: Arial;
+		color: #ffffff;
+		font-size: 12px;
+		padding: 5px 20px 5px 20px;
+		text-decoration: none;
+	}
+	
+	
+	.status-message-bad {
+        font-size:12pt;
+        text-align:center;
+        font-weight:bold;
+		background-color:#bbb;
+		color:#b30000;
+	}
+	
+	.status-message-good {
+        font-size:12pt;
+        text-align:center;
+        font-weight:bold;
+		background-color:#bbb;
+		color:#00b300;
+	}
+	
+	.status-message-neutral {
+        font-size:12pt;
+        text-align:center;
+        font-weight:bold;
+		background-color:#bbb;
+		color:#010101;
+	}
+	
+	.legendDiv {
+		border-radius: 8px;
+		display: block;
+		padding: 10px;
+		width: 270px;
+		left: 89%;
+		margin-left: -150px;
+		top: 25%;
+		/* margin-top: -100px; */
+		background: #aaa;
+		z-index: 20;
+		position: fixed;
+	}
+	
+	.descriptionModelBox {
+		border-radius: 8px;
+		display: none;
+		width: 400px;
+		max-width: 400px;
+		left: 75px;
+		top: 25%;
+		margin-top: -100px;
+		background: #3498db;
+		z-index: 20;
+		position: fixed
+	}
+	
+	.descriptionModelBoxContent {
+		color: #FEFEFE;
+		text-align: left;
+		padding: 10px;
+		font-size: 20px;
+		word-wrap: break-word;
+		
+	}
+	
+	.descriptionModelBoxClose {
+		color: #000;
+		float: right;
+		margin: 0 0 10px 10px;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	
+	.descriptionModelBoxClose:hover,
+	.descriptionModelBoxClose:focus {
+		color: #777;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	#speciesGrid-1, #speciesGrid-2, #speciesGrid-3  {
+		width: 100%;
+		height: 310px;
+		margin: 5px;
+		margin-bottom: 60px;
+		background-color: whitesmoke;
+	}
+	
+	#speciesGrid-3 .dgrid-column-0 {
+		width: 25%;
+	}
+		
+/*		style="width:100%; height: 300px; margin:5px;background-color:whitesmoke;" */
+
+	
+	.tooltip {
+		z-index: 10;
+		border-radius: 8px;
+		display: none;
+		padding: 5px;
+		background-color : #ffffe6;
+		position: fixed;
+		overflow: hidden;
+	}
+	
+	.totalFeaturesSelected {
+		background: #3498db;
+		color: #FEFEFE;
+		text-align: center;
+	}
+	
+	#tabs {
+		position: fixed;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+	}
+	
+	#tabButtons {
+		margin: 5px 0px 0px 0px;
+		display: inline-block;
+
+		
+		
+	}
+	#tabs-1 {
+		position: fixed;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		visibility: visible;
+	}
+	
+	#tabs-2, #tabs-3 {
+		position: fixed;
+		padding: 0px;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		
+	}
+	
+	
+	
+	.tab {
+		background-color: #aaaaaa; 
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		/* text-align: center; */
+		display: inline-block;
+		font-size: 16px;
+		text-decoration: none;
+		border-radius: 5px 5px 0px 0px;
+	}
+	
+	.tab a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.tab:active, .tab_selected {
+		background-color: #dddddd; 
+		border: 2px;
+		border-color: #000000;
+		color: white;
+		padding: 15px 32px;
+		/* text-align: center; */
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		
+	}
+	
+	
+	
+	/* Esri elements */
+	.esriControlsBR {
+		visibility: hidden;
+	}
+	
+    #homebutton-1, #homebutton-2, #homebutton-3 {
+		position: absolute;
+		top: 95px;
+		left: 20px;
+		z-index: 50;
+    }
+	
+	#opacityslider-1, #opacityslider-2, #opacityslider-3 {
+		position: absolute;
+		top: 140px;
+		left: 5px;
+		z-index: 50;
+	}
+	
+	#opacityslider-1 .esriSliderToolTipText, #opacityslider-2 .esriSliderToolTipText,
+	#opacityslider-3 .esriSliderToolTipText {
+		left: 30px;
+		border: 1px solid black;
+		visibility: hidden;
+		width: 150px;
+		font-size: 10pt;
+		background-color: #ddd;
+		text-align: center;
+		padding: 1px;
+
+		/* Position the tooltip text - see examples below! */
+		/* position: absolute; */
+		z-index: 1;
+	}
+	
+	#opacityslider-1:hover .esriSliderToolTipText, #opacityslider-2:hover .esriSliderToolTipText,
+	#opacityslider-3:hover .esriSliderToolTipText {
+		transition-delay: .5s;
+		position:absolute;
+		/* position: fixed; */
+		visibility: visible;
+	}
+	
+	.esriRendererSlider {
+		width: 50px;
+	}
+	
+	.esriRendererSlider .esri-slider-node {
+		margin: 0;
+		width: auto;
+	}
+
+	.esriRendererSlider .esri-top-label-node, .esriRendererSlider .esri-bottom-label-node { 
+		display: none;
+	}
