@@ -4,9 +4,16 @@ Web application to interface with GIS maps with the intent to get specific data 
 
 ### Files used with the web application
  * index.html  - Main web page that calls embeds the other files.
+ * main-1.html - HTML page for the Integrated Modeling map.
+ * main-2.html - HTML page for the Aquatic Modeling map.
+ * main-3.html - HTML page for the Aquatic catchment score map.
  * selectSpecies.css - CSS parameters used to create a visible interface for the web app.
- * selectSpecies.js - Main javascript file that contains all the functions needed to execute the web app.
- * selectIndex.js - JSON table that contains species index and attributes for each species. 
+ * selectSpecies.js - Main javascript file. This will call the the three different map applications that are available.
+ * integrated.js - javascript file that processes the Integrated modeling map service.
+ * aquatic.js - javascript file that processes the Aquatic modeling map service.
+ * catchscore.js - javascript file that processes the Aquatic catchment score map service.
+ * integratedSpeciesIndex.js - JSON table that contains species index and attributes for each species within the integrated modeling service. 
+ * aquaticSpeciesIndex.js - JSON table that contains species index and attributes for each species within the aquatic modeling service.
  
 
 ### Requirements for the backend of the web application.
