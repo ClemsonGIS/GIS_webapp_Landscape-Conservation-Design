@@ -28,6 +28,9 @@ Web application to interface with GIS maps with the intent to get specific data 
     * conservation data table that contains attributes for each polygon feature.
     * relationship class that does a one to many maping between each polygon feature and the attributes within the conservation data table.
  * 3 layer files that create the symbology for each map
+ 
+ Thie Box link that contains these files is at the following:
+ https://clemson.box.com/s/f2mwywdsk1jx1krovpuf3kpd53tluwki
     
     
     
