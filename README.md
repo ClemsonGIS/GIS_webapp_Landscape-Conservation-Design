@@ -43,7 +43,7 @@ Web application to interface with GIS maps with the intent to get specific data 
         Two of the layer files (AquaticCatchScoreSymbology.lyr and AquaticModelingSymbology.lyr) 
         will be used with the same feature class (AqauticModeling).
         
-   * By default when you pull in the feature class a default layer will be created in the table of contents window. After you pull in the layer file you can remove this default layer.
+   * By default when you pull in the feature class a default layer will be created in the table of contents window. After you pull in the custom layer file you can remove this default layer.
    
 
     
