@@ -15,6 +15,12 @@ Web application to interface with GIS maps with the intent to get specific data 
  * integratedSpeciesIndex.js - JSON table that contains species index and attributes for each species within the integrated modeling service. 
  * aquaticSpeciesIndex.js - JSON table that contains species index and attributes for each species within the aquatic modeling service.
  
+ ### How the scripts are invoked
+ * **index.html** is loaded automatically when page is loaded. **index.html** loads **selectSpecies.css**, **main-1.html**, **main-2.html**, and **main-3.html**. It also loads javascript file **selectSpecies.js**. 
+ * **selectSpecies.js** pulls in **integrate.js**, **aquatic.js**, and **catchscore.js**.
+ * **integrate.js** pulls in **integratedSpeciesIndex.js**.
+ * **aquatic.js** pulls in **aquaticSpeciesIndex.js**.
+ 
 
 ### Requirements for the backend of the web application.
  * The web app can be hosted on most any web server.
