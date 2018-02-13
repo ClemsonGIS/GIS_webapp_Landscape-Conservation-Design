@@ -44,6 +44,8 @@ Web application to interface with GIS maps with the intent to get specific data 
         will be used with the same feature class (AqauticModeling).
         
    * By default when you pull in the feature class a default layer will be created in the table of contents window. After you pull in the custom layer file you can remove this default layer.
+   * Now you can create a map service under your ArcGIS Server. Go to **File** menu option and select **Share As**. Then, under the submenu select **Service**. Choose the radio button **Publish a service** and click the **Next >** button.
+   * The next dialog window will want you to choose the ArcGIS server you want ArcMap to connect to. Choose the ArcGIS server you desire (If you haven't connected to an ArcGIS server you'll need to find some documentation on how to do it). Also, you'll specify the Service Name of the newly published service.
    
 
     
